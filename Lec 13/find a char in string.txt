@@ -1,0 +1,20 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        String str = "Kunal";
+        char target = 'a';
+        int ans = search(str, target);
+        if(ans==-1){
+            System.out.println("Not found!");
+        } else {
+            System.out.println("Found at: " + ans);
+
+        }
+    }
+    static int search(String str, char target){
+            for(int i = 0; i<str.length(); i++){
+                if(str.charAt(i) == target){
+                    return i;
+                }
+            }  return -1;
+    }
+}
